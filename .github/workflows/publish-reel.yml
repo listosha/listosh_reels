@@ -5,7 +5,14 @@ name: Publish Reel (IG + YouTube)
 
 on:
   schedule:
-    - cron: '0 17 * * *'      # 20:00 МСК backstop (GitHub cron lags 30-120 min; cron-job.org is primary)
+    # 3 ежедневных слота. GitHub-cron в UTC; МСК = UTC+3 → 09/14/19 МСК = 06/11/16 UTC.
+    # GitHub-cron опаздывает на 30-120 мин и изредка пропускает запуск — логика «самый ранний
+    # созревший» это переживает (опоздавший пост уйдёт на следующем триггере). Для минутной
+    # точности можно поверх повесить cron-job.org на те же слоты (как у каруселей) — они уживаются
+    # (concurrency сериализует, status=published не даёт дублей).
+    - cron: '0 6 * * *'
+    - cron: '0 11 * * *'
+    - cron: '0 16 * * *'
   workflow_dispatch:
 
 concurrency:
