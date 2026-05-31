@@ -72,7 +72,9 @@ def publish_ig(slug, caption):
         "creation_id": cid, "access_token": token}, timeout=60).json()
     if "id" not in pub:
         raise RuntimeError("IG publish: " + json.dumps(pub, ensure_ascii=False))
-    return "https://www.instagram.com/reel/" + pub["id"]
+    perma = requests.get(f"{GRAPH}/{pub['id']}", params={
+        "fields": "permalink", "access_token": token}, timeout=30).json()
+    return perma.get("permalink") or ("https://www.instagram.com/reel/" + pub["id"])
 
 
 def publish_yt(slug, title, caption, tags):
