@@ -1,0 +1,55 @@
+# Cloud reel publisher (PC-off) — copy to .github/workflows/publish-reel.yml in the reels repo.
+# Mirrors publish-carousel.yml: cron-job.org → workflow_dispatch at exact slots; GitHub cron as a
+# once-daily backstop; serialized; one due reel per run; commits schedule.json back.
+name: Publish Reel (IG + YouTube)
+
+on:
+  schedule:
+    - cron: '0 17 * * *'      # 20:00 МСК backstop (GitHub cron lags 30-120 min; cron-job.org is primary)
+  workflow_dispatch:
+
+concurrency:
+  group: publish-reel
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install deps
+        run: pip install requests google-api-python-client google-auth google-auth-oauthlib
+
+      - name: Write YouTube credential files from secrets
+        env:
+          YT_TOKEN_JSON: ${{ secrets.YT_TOKEN_JSON }}
+          YT_CLIENT_SECRET_JSON: ${{ secrets.YT_CLIENT_SECRET_JSON }}
+        run: |
+          printf '%s' "$YT_TOKEN_JSON" > token.json
+          printf '%s' "$YT_CLIENT_SECRET_JSON" > client_secret.json
+
+      - name: Publish one due reel
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          IG_USER_ID: '17841403939108726'
+          REPO_RAW: 'https://raw.githubusercontent.com/${{ github.repository }}/main'
+          PLATFORMS: 'ig,yt'
+          YT_TOKEN_JSON_PATH: token.json
+          YT_CLIENT_SECRET_PATH: client_secret.json
+        run: python publish_reel.py
+
+      - name: Commit schedule.json
+        run: |
+          rm -f token.json client_secret.json
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add schedule.json
+          git diff --staged --quiet || git commit -m "Published reel $(date -u +%Y-%m-%d\ %H:%M) UTC"
+          git push
