@@ -1,18 +1,11 @@
 # Cloud reel publisher (PC-off) — copy to .github/workflows/publish-reel.yml in the reels repo.
-# Mirrors publish-carousel.yml: cron-job.org → workflow_dispatch at exact slots; GitHub cron as a
-# once-daily backstop; serialized; one due reel per run; commits schedule.json back.
+# Mirrors publish-carousel.yml: triggered SOLELY by cron-job.org → workflow_dispatch at the exact
+# slots (09/14/19 МСК), as the carousels are. Native GitHub-cron was removed — оно опаздывало на
+# 30-120 мин и пропускало запуски, из-за чего ролики выходили с задержкой в часы. cron-job.org бьёт
+# секунда-в-секунду. Логика «самый ранний созревший, 1 за прогон» + status=published = без дублей.
 name: Publish Reel (IG + YouTube)
 
 on:
-  schedule:
-    # 3 ежедневных слота. GitHub-cron в UTC; МСК = UTC+3 → 09/14/19 МСК = 06/11/16 UTC.
-    # GitHub-cron опаздывает на 30-120 мин и изредка пропускает запуск — логика «самый ранний
-    # созревший» это переживает (опоздавший пост уйдёт на следующем триггере). Для минутной
-    # точности можно поверх повесить cron-job.org на те же слоты (как у каруселей) — они уживаются
-    # (concurrency сериализует, status=published не даёт дублей).
-    - cron: '0 6 * * *'
-    - cron: '0 11 * * *'
-    - cron: '0 16 * * *'
   workflow_dispatch:
 
 concurrency:
