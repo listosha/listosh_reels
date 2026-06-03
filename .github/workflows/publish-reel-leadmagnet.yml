@@ -1,0 +1,56 @@
+# Cloud publisher для ЛИД-МАГНИТ-роликов (IG Reel + YouTube Short).
+# Отдельная очередь leadmagnets-schedule.json + своя concurrency-группа, чтобы
+# НЕ переставлять очередь обычных рилсов (как Threads-лид-магниты отделены от текста).
+# Триггер — cron-job.org → workflow_dispatch, слот 21:00 МСК (2 раза/нед: Ср+Сб;
+# даты заданы в очереди, крон бьёт ежедневно, в пустые дни тихо пропускает).
+name: Publish Reel Lead Magnet (IG + YouTube)
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: publish-reel-leadmagnet
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install deps
+        run: pip install requests google-api-python-client google-auth google-auth-oauthlib
+
+      - name: Write YouTube credential files from secrets
+        env:
+          YT_TOKEN_JSON: ${{ secrets.YT_TOKEN_JSON }}
+          YT_CLIENT_SECRET_JSON: ${{ secrets.YT_CLIENT_SECRET_JSON }}
+        run: |
+          printf '%s' "$YT_TOKEN_JSON" > token.json
+          printf '%s' "$YT_CLIENT_SECRET_JSON" > client_secret.json
+
+      - name: Publish one due lead-magnet reel
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          IG_USER_ID: '17841403939108726'
+          REPO_RAW: 'https://raw.githubusercontent.com/${{ github.repository }}/main'
+          PLATFORMS: 'ig,yt'
+          SCHEDULE_FILE: 'leadmagnets-schedule.json'
+          YT_TOKEN_JSON_PATH: token.json
+          YT_CLIENT_SECRET_PATH: client_secret.json
+        run: python publish_reel.py
+
+      - name: Commit leadmagnets-schedule.json
+        run: |
+          rm -f token.json client_secret.json
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add leadmagnets-schedule.json
+          git diff --staged --quiet || git commit -m "Published LM reel $(date -u +%Y-%m-%d\ %H:%M) UTC"
+          git push

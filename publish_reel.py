@@ -29,6 +29,9 @@ GRAPH = "https://graph.facebook.com/v21.0"
 IG_USER_ID = os.environ.get("IG_USER_ID", "17841403939108726")
 REPO_RAW = os.environ.get("REPO_RAW", "").rstrip("/")
 PLATFORMS = [p.strip() for p in os.environ.get("PLATFORMS", "ig,yt").split(",") if p.strip()]
+# Какое расписание обрабатываем. По умолчанию обычные рилсы; лид-магниты задают
+# SCHEDULE_FILE=leadmagnets-schedule.json (отдельная очередь, свой workflow+крон).
+SCHEDULE_FILE = os.environ.get("SCHEDULE_FILE", "schedule.json")
 MSK = timezone(timedelta(hours=3))
 
 
@@ -109,7 +112,7 @@ def publish_yt(slug, title, caption, tags):
 
 
 def main():
-    with open("schedule.json", encoding="utf-8") as f:
+    with open(SCHEDULE_FILE, encoding="utf-8") as f:
         schedule = json.load(f)
     i = due_entry(schedule)
     if i is None:
@@ -139,7 +142,7 @@ def main():
         e["published_at"] = datetime.now(MSK).isoformat()
         if failed:
             e["partial_errors"] = failed
-        with open("schedule.json", "w", encoding="utf-8") as f:
+        with open(SCHEDULE_FILE, "w", encoding="utf-8") as f:
             json.dump(schedule, f, ensure_ascii=False, indent=2)
         print("schedule.json обновлён.")
     if failed and not results:
