@@ -80,7 +80,7 @@ def publish_ig(slug, caption):
     return perma.get("permalink") or ("https://www.instagram.com/reel/" + pub["id"])
 
 
-def publish_yt(slug, title, caption, tags):
+def publish_yt(slug, title, caption, tags, first_comment=None):
     from google.oauth2.credentials import Credentials
     from google.auth.transport.requests import Request
     from googleapiclient.discovery import build
@@ -88,7 +88,8 @@ def publish_yt(slug, title, caption, tags):
 
     creds = Credentials.from_authorized_user_file(
         os.environ["YT_TOKEN_JSON_PATH"],
-        ["https://www.googleapis.com/auth/youtube.upload"])
+        ["https://www.googleapis.com/auth/youtube.upload",
+         "https://www.googleapis.com/auth/youtube.force-ssl"])
     if not creds.valid:
         creds.refresh(Request())               # headless refresh via refresh_token
     yt = build("youtube", "v3", credentials=creds)
@@ -108,6 +109,10 @@ def publish_yt(slug, title, caption, tags):
     thumb = f"thumbs/{slug}.png"
     if os.path.exists(thumb):
         yt.thumbnails().set(videoId=vid, media_body=MediaFileUpload(thumb)).execute()
+    if first_comment:                       # первый коммент со ссылкой (ключевые ролики; пин — вручную)
+        yt.commentThreads().insert(part="snippet", body={
+            "snippet": {"videoId": vid,
+                        "topLevelComment": {"snippet": {"textOriginal": first_comment}}}}).execute()
     return "https://youtu.be/" + vid
 
 
@@ -130,7 +135,7 @@ def main():
             failed.append(f"ig: {ex}"); print("  ✗ IG:", ex)
     if "yt" in PLATFORMS:
         try:
-            results["youtube"] = publish_yt(e["slug"], e["title"], e["caption"], e.get("tags", []))
+            results["youtube"] = publish_yt(e["slug"], e["title"], e["caption"], e.get("tags", []), e.get("yt_comment"))
             print("  ✓ YT:", results["youtube"])
         except Exception as ex:
             failed.append(f"yt: {ex}"); print("  ✗ YT:", ex)
