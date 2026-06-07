@@ -464,7 +464,7 @@
     "date": "2026-06-07",
     "time": "19:00",
     "tz": "+03:00",
-    "status": "pending",
+    "status": "published",
     "title": "Волосы лезут, а анализы «в норме»",
     "caption": "Волосы лезут, а тебе говорят «сезонное»?\n\nЧаще это пустой ферритин, а не шампунь.\n\nНапиши ВОЛОСЫ — скину протокол в личку. 🔖 Сохрани.\n\n#волосы #выпадениеволос #ферритин #железо #нутрициолог #листошенков",
     "tags": [
@@ -474,7 +474,12 @@
       "железо",
       "нутрициолог"
     ],
-    "yt_comment": "Протокол «остановить выпадение через железо за 3 месяца» 👉 https://app.listoshenkov.ru/?section=freeguide_protokol-volosy-3-mesyaca&utm_source=youtube&utm_medium=shorts&utm_campaign=volosy"
+    "yt_comment": "Протокол «остановить выпадение через железо за 3 месяца» 👉 https://app.listoshenkov.ru/?section=freeguide_protokol-volosy-3-mesyaca&utm_source=youtube&utm_medium=shorts&utm_campaign=volosy",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/DZSmVuUD3sb/",
+      "youtube": "https://youtu.be/lPXMcCm--Kc"
+    },
+    "published_at": "2026-06-07T19:01:32.829901+03:00"
   },
   {
     "slug": "nervy-h22",
