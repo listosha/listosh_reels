@@ -109,11 +109,15 @@ def publish_yt(slug, title, caption, tags, first_comment=None):
     thumb = f"thumbs/{slug}.png"
     if os.path.exists(thumb):
         yt.thumbnails().set(videoId=vid, media_body=MediaFileUpload(thumb)).execute()
+    comment_err = None
     if first_comment:                       # первый коммент со ссылкой (ключевые ролики; пин — вручную)
-        yt.commentThreads().insert(part="snippet", body={
-            "snippet": {"videoId": vid,
-                        "topLevelComment": {"snippet": {"textOriginal": first_comment}}}}).execute()
-    return "https://youtu.be/" + vid
+        try:
+            yt.commentThreads().insert(part="snippet", body={
+                "snippet": {"videoId": vid,
+                            "topLevelComment": {"snippet": {"textOriginal": first_comment}}}}).execute()
+        except Exception as ex:             # коммент не валит уже залитое видео (иначе ретрай зальёт дубль)
+            comment_err = str(ex)
+    return "https://youtu.be/" + vid, comment_err
 
 
 def main():
@@ -135,8 +139,11 @@ def main():
             failed.append(f"ig: {ex}"); print("  ✗ IG:", ex)
     if "yt" in PLATFORMS:
         try:
-            results["youtube"] = publish_yt(e["slug"], e["title"], e["caption"], e.get("tags", []), e.get("yt_comment"))
+            results["youtube"], yt_cerr = publish_yt(
+                e["slug"], e["title"], e["caption"], e.get("tags", []), e.get("yt_comment"))
             print("  ✓ YT:", results["youtube"])
+            if yt_cerr:
+                failed.append(f"yt_comment: {yt_cerr}"); print("  ✗ YT comment:", yt_cerr)
         except Exception as ex:
             failed.append(f"yt: {ex}"); print("  ✗ YT:", ex)
 
