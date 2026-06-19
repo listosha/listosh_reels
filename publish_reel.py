@@ -80,7 +80,7 @@ def publish_ig(slug, caption):
     return perma.get("permalink") or ("https://www.instagram.com/reel/" + pub["id"])
 
 
-def publish_yt(slug, title, caption, tags, first_comment=None):
+def publish_yt(slug, title, caption, tags, first_comment=None, yt_caption=None):
     from google.oauth2.credentials import Credentials
     from google.auth.transport.requests import Request
     from googleapiclient.discovery import build
@@ -94,12 +94,18 @@ def publish_yt(slug, title, caption, tags, first_comment=None):
         creds.refresh(Request())               # headless refresh via refresh_token
     yt = build("youtube", "v3", credentials=creds)
 
+    # YT gets its own description if provided (no IG keyword→DM CTA; link lives in the pinned
+    # first comment). Falls back to the shared IG caption when yt_caption is absent.
+    description = (yt_caption or caption) + "\n\n#Shorts"
     body = {
-        "snippet": {"title": title[:95], "description": caption + "\n\n#Shorts",
+        "snippet": {"title": title[:95], "description": description,
                     "tags": tags, "categoryId": "22"},
         "status": {"privacyStatus": "public", "selfDeclaredMadeForKids": False},
     }
-    media = MediaFileUpload(f"videos/{slug}.mp4", chunksize=8 * 1024 * 1024, resumable=True,
+    # YT-specific cut if present (e.g. different burned CTA): videos/<slug>-yt.mp4, else the IG file
+    yt_file = f"videos/{slug}-yt.mp4"
+    vfile = yt_file if os.path.exists(yt_file) else f"videos/{slug}.mp4"
+    media = MediaFileUpload(vfile, chunksize=8 * 1024 * 1024, resumable=True,
                             mimetype="video/*")
     req = yt.videos().insert(part="snippet,status", body=body, media_body=media)
     resp = None
@@ -140,7 +146,8 @@ def main():
     if "yt" in PLATFORMS:
         try:
             results["youtube"], yt_cerr = publish_yt(
-                e["slug"], e["title"], e["caption"], e.get("tags", []), e.get("yt_comment"))
+                e["slug"], e["title"], e["caption"], e.get("tags", []), e.get("yt_comment"),
+                e.get("yt_caption"))
             print("  ✓ YT:", results["youtube"])
             if yt_cerr:
                 failed.append(f"yt_comment: {yt_cerr}"); print("  ✗ YT comment:", yt_cerr)
