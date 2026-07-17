@@ -2318,7 +2318,7 @@
     "date": "2026-07-17",
     "time": "19:00",
     "tz": "+03:00",
-    "status": "pending",
+    "status": "published",
     "title": "Магний из аптеки, который не работает",
     "caption": "Пьёшь магний, а толку ноль? Скорее всего, у тебя оксид - он почти не усваивается. Рабочие формы другие: цитрат, глицинат, треонат. 🔖 Сохрани, чтоб не промахнуться в аптеке. Напиши МАГНИЙ - пришлю гайд «Витамины и Минералы». Кто проверил свою баночку?\n\n#магний #витамины #минералы #сондефицит #судороги #нутрициолог #листошенков",
     "yt_caption": "Пьёшь магний, а толку ноль? Скорее всего, у тебя оксид - он почти не усваивается. Рабочие формы другие: цитрат, глицинат, треонат. Какая форма под какой запрос - в гайде «Витамины и Минералы» - ссылка в закреплённом комментарии.",
@@ -2331,7 +2331,12 @@
       "нутрициолог",
       "листошенков"
     ],
-    "yt_comment": "Гайд «Витамины и Минералы» — https://app.listoshenkov.ru/?section=freeguide_gaid-vitaminy-mineraly&utm_source=youtube&utm_medium=shorts&utm_campaign=magniy Сохрани и перешли тому, кому пригодится."
+    "yt_comment": "Гайд «Витамины и Минералы» — https://app.listoshenkov.ru/?section=freeguide_gaid-vitaminy-mineraly&utm_source=youtube&utm_medium=shorts&utm_campaign=magniy Сохрани и перешли тому, кому пригодится.",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/Da5nH5SDFK6/",
+      "youtube": "https://youtu.be/2myTxR7dJ5U"
+    },
+    "published_at": "2026-07-17T19:10:18.498556+03:00"
   },
   {
     "slug": "magniy-m2-svodit-nogi",
