@@ -2368,7 +2368,7 @@
     "date": "2026-07-18",
     "time": "19:00",
     "tz": "+03:00",
-    "status": "pending",
+    "status": "published",
     "title": "Пьёшь витамин D зря",
     "caption": "Пьёшь витамин D, а уровень застрял? Без магния D не переходит в активную форму - они работают только в паре. А магния у большинства не хватает. 🔖 Сохрани, чтоб не пить D впустую. Напиши МАГНИЙ - пришлю гайд «Витамины и Минералы». Ты D с магнием пьёшь?\n\n#магний #витамины #минералы #сондефицит #судороги #нутрициолог #листошенков",
     "yt_caption": "Пьёшь витамин D, а уровень застрял? Без магния D не переходит в активную форму - они работают только в паре. Как собрать связку D и магний - в гайде «Витамины и Минералы» - ссылка в закреплённом комментарии.",
@@ -2381,7 +2381,12 @@
       "нутрициолог",
       "листошенков"
     ],
-    "yt_comment": "Гайд «Витамины и Минералы» — https://app.listoshenkov.ru/?section=freeguide_gaid-vitaminy-mineraly&utm_source=youtube&utm_medium=shorts&utm_campaign=magniy Сохрани и перешли тому, кому пригодится."
+    "yt_comment": "Гайд «Витамины и Минералы» — https://app.listoshenkov.ru/?section=freeguide_gaid-vitaminy-mineraly&utm_source=youtube&utm_medium=shorts&utm_campaign=magniy Сохрани и перешли тому, кому пригодится.",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/Da8L2haCdis/",
+      "youtube": "https://youtu.be/DyrS58myOIo"
+    },
+    "published_at": "2026-07-18T19:09:48.719848+03:00"
   },
   {
     "slug": "magniy-m4-formy-magniya",
