@@ -2418,7 +2418,7 @@
     "date": "2026-07-19",
     "time": "19:00",
     "tz": "+03:00",
-    "status": "pending",
+    "status": "published",
     "title": "Иммунитет не слабый - он занят",
     "caption": "Едва выздоровела - и снова простуда? Часто иммунитет не слабый, а занятый: держит в фоне скрытые вирусы, на новое сил не остаётся. 🔖 Сохрани. Напиши ИММУНИТЕТ - пришлю гайд «Pro Иммунитет».\n\n#иммунитет #простуда #орви #кишечник #витамины #нутрициолог #листошенков",
     "yt_caption": "Едва выздоровела - и снова простуда? Часто иммунитет не слабый, а занятый: держит в фоне скрытые вирусы. Как его разгрузить - гайд «Pro Иммунитет» - ссылка в закреплённом комментарии.",
@@ -2431,7 +2431,12 @@
       "нутрициолог",
       "листошенков"
     ],
-    "yt_comment": "Гайд «Pro Иммунитет» — https://app.listoshenkov.ru/?section=freeguide_gaid-immunitet&utm_source=youtube&utm_medium=shorts&utm_campaign=immunitet Сохрани и перешли тому, кому пригодится."
+    "yt_comment": "Гайд «Pro Иммунитет» — https://app.listoshenkov.ru/?section=freeguide_gaid-immunitet&utm_source=youtube&utm_medium=shorts&utm_campaign=immunitet Сохрани и перешли тому, кому пригодится.",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/Da-wp6bDl15/",
+      "youtube": "https://youtu.be/tTT28mlA49A"
+    },
+    "published_at": "2026-07-19T19:09:41.398847+03:00"
   },
   {
     "slug": "immunitet-i2-vitaminy-ne-spasayut",
