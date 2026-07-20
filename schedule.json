@@ -2468,7 +2468,7 @@
     "date": "2026-07-20",
     "time": "19:00",
     "tz": "+03:00",
-    "status": "pending",
+    "status": "published",
     "title": "По соплям понять, сколько ещё болеть",
     "caption": "Прозрачный → белый → желтоватый: по цвету насморка можно прикинуть стадию простуды. Грубый ориентир, не диагноз - дольше 10 дней или с температурой к врачу. 🔖 Сохрани на сезон. Напиши ИММУНИТЕТ - пришлю гайд «Pro Иммунитет».\n\n#иммунитет #простуда #орви #кишечник #витамины #нутрициолог #листошенков",
     "yt_caption": "Прозрачный → белый → желтоватый: по цвету насморка можно прикинуть стадию простуды. Грубый ориентир, не диагноз. Как поддержать слизистые - гайд «Pro Иммунитет» - ссылка в закреплённом комментарии.",
@@ -2481,7 +2481,12 @@
       "нутрициолог",
       "листошенков"
     ],
-    "yt_comment": "Гайд «Pro Иммунитет» — https://app.listoshenkov.ru/?section=freeguide_gaid-immunitet&utm_source=youtube&utm_medium=shorts&utm_campaign=immunitet Сохрани и перешли тому, кому пригодится."
+    "yt_comment": "Гайд «Pro Иммунитет» — https://app.listoshenkov.ru/?section=freeguide_gaid-immunitet&utm_source=youtube&utm_medium=shorts&utm_campaign=immunitet Сохрани и перешли тому, кому пригодится.",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/DbBVnJ4CMz5/",
+      "youtube": "https://youtu.be/UxBUnBGTMPo"
+    },
+    "published_at": "2026-07-20T19:11:11.829420+03:00"
   },
   {
     "slug": "immunitet-i4-v-kishechnike",
