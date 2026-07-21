@@ -2518,7 +2518,7 @@
     "date": "2026-07-21",
     "time": "19:00",
     "tz": "+03:00",
-    "status": "pending",
+    "status": "published",
     "title": "Каким добавкам я говорю да, каким - нет",
     "caption": "Пьёшь курс за курсом, а сдвига нет? Часто дело не в добавке, а в форме на этикетке: оксид и сульфат почти не усваиваются, бисглицинат и цитрат - работают. 🔖 Сохрани. Напиши ВИТАМИНЫ - пришлю гайд «Витамины и Минералы».\n\n#бады #витамины #добавки #какчитатьэтикетку #нутрициолог #листошенков",
     "yt_caption": "Пьёшь курс за курсом, а сдвига нет? Часто дело не в добавке, а в форме на этикетке: оксид и сульфат почти не усваиваются, бисглицинат и цитрат - работают. Каким формам «да», каким «нет» - в гайде «Витамины и Минералы» - ссылка в закреплённом комментарии.",
@@ -2530,7 +2530,12 @@
       "нутрициолог",
       "листошенков"
     ],
-    "yt_comment": "Гайд «Витамины и Минералы» — https://app.listoshenkov.ru/?section=freeguide_gaid-vitaminy-mineraly&utm_source=youtube&utm_medium=shorts&utm_campaign=bad Сохрани и перешли тому, кому пригодится."
+    "yt_comment": "Гайд «Витамины и Минералы» — https://app.listoshenkov.ru/?section=freeguide_gaid-vitaminy-mineraly&utm_source=youtube&utm_medium=shorts&utm_campaign=bad Сохрани и перешли тому, кому пригодится.",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/DbD6qzuAZ5Q/",
+      "youtube": "https://youtu.be/H_9tTZRvMrQ"
+    },
+    "published_at": "2026-07-21T19:13:46.405275+03:00"
   },
   {
     "slug": "bad-b2-cifra-na-banke",
