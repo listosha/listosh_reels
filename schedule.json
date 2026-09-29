@@ -3295,6 +3295,11 @@
       "здоровье",
       "листошенков"
     ],
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/Dd4Xk8ylKFx/",
+      "youtube": "https://youtu.be/IUg-fHULipA"
+    },
+    "published_at": "2026-09-29T21:09:38.414717+03:00"
   }
 ]
