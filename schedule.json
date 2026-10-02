@@ -3318,7 +3318,12 @@
       "листошенков"
     ],
     "yt_comment": "Бесплатный гайд «Кортизол: признаки и что сдать»: https://listoshenkov.ru/kortizol",
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/Dd-zHecAZ9W/",
+      "youtube": "https://youtu.be/kRpuqdy1LbU"
+    },
+    "published_at": "2026-10-02T09:05:22.865632+03:00"
   },
   {
     "slug": "mv04-kortizol-analiz",
