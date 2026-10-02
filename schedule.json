@@ -3341,7 +3341,12 @@
       "листошенков"
     ],
     "yt_comment": "Бесплатный гайд «Кортизол: признаки и что сдать»: https://listoshenkov.ru/kortizol-analiz",
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/Dd_3vZQkYn6/",
+      "youtube": "https://youtu.be/QmxF9alzzF0"
+    },
+    "published_at": "2026-10-02T19:04:58.614565+03:00"
   },
   {
     "slug": "mv05-3-nochi",
