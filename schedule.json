@@ -3364,7 +3364,12 @@
       "листошенков"
     ],
     "yt_comment": "Бесплатный гайд «Кортизол: признаки и что сдать»: https://listoshenkov.ru/3-nochi",
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/DeBX1RfiICR/",
+      "youtube": "https://youtu.be/5t5FCj1lVFs"
+    },
+    "published_at": "2026-10-03T09:04:47.159833+03:00"
   },
   {
     "slug": "mv06-kortizol-tabletki",
