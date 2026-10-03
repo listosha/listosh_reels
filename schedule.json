@@ -3387,7 +3387,12 @@
       "листошенков"
     ],
     "yt_comment": "Бесплатный гайд «Кортизол: признаки и что сдать»: https://listoshenkov.ru/kortizol-tabletki",
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/DeCccw_kUU-/",
+      "youtube": "https://youtu.be/Qxl1O4dCs_g"
+    },
+    "published_at": "2026-10-03T19:04:12.721237+03:00"
   },
   {
     "slug": "mv07-magniy-malo",
