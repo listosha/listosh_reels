@@ -3409,7 +3409,12 @@
       "листошенков"
     ],
     "yt_comment": "Бесплатный гайд «Магний и витамин D»: https://listoshenkov.ru/magniy-malo",
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/DeD8nPgj-iT/",
+      "youtube": "https://youtu.be/aSuW1ip2aKk"
+    },
+    "published_at": "2026-10-04T09:04:30.278730+03:00"
   },
   {
     "slug": "mv08-d-zhir",
