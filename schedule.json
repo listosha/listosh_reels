@@ -3475,7 +3475,12 @@
       "листошенков"
     ],
     "yt_comment": "Бесплатный гайд «Магний и витамин D»: https://listoshenkov.ru/d-analiz",
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/DeHmJTBkkxG/",
+      "youtube": "https://youtu.be/rz7olKR6Lzw"
+    },
+    "published_at": "2026-10-05T19:05:10.429252+03:00"
   },
   {
     "slug": "mv11-zhelezo-chai",
