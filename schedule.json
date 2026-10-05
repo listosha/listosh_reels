@@ -3453,7 +3453,12 @@
       "листошенков"
     ],
     "yt_comment": "Бесплатный гайд «Магний и витамин D»: https://listoshenkov.ru/d-magniy",
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/DeGhivKCf2k/",
+      "youtube": "https://youtu.be/4vVDDd2XFTo"
+    },
+    "published_at": "2026-10-05T09:05:37.592253+03:00"
   },
   {
     "slug": "mv10-d-analiz",
