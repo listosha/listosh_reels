@@ -3519,7 +3519,12 @@
       "листошенков"
     ],
     "yt_comment": "Бесплатный протокол «Железо за 8 недель»: https://listoshenkov.ru/ferritin-stoit",
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/DeKK-7zE-YY/",
+      "youtube": "https://youtu.be/I1QTU-ed6nM"
+    },
+    "published_at": "2026-10-06T19:05:33.686945+03:00"
   },
   {
     "slug": "mv13-ferritin-volosy",
