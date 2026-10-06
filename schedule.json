@@ -3497,7 +3497,12 @@
       "листошенков"
     ],
     "yt_comment": "Бесплатный протокол «Железо за 8 недель»: https://listoshenkov.ru/zhelezo-chai",
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/DeJGPmfDazY/",
+      "youtube": "https://youtu.be/kaSzjtxBu7E"
+    },
+    "published_at": "2026-10-06T09:05:04.741515+03:00"
   },
   {
     "slug": "mv12-ferritin-stoit",
