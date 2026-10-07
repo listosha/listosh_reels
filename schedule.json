@@ -3541,7 +3541,12 @@
       "листошенков"
     ],
     "yt_comment": "Бесплатный протокол «Железо за 8 недель»: https://listoshenkov.ru/ferritin-volosy",
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/DeLq_NTEzA-/",
+      "youtube": "https://youtu.be/oGyvhYXfp2U"
+    },
+    "published_at": "2026-10-07T09:04:31.222574+03:00"
   },
   {
     "slug": "mv14-holodno",
