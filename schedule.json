@@ -3563,7 +3563,12 @@
       "листошенков"
     ],
     "yt_comment": "Бесплатный протокол «Железо за 8 недель»: https://listoshenkov.ru/holodno",
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/DeMv450iA2G/",
+      "youtube": "https://youtu.be/KTyUjSS8Ml4"
+    },
+    "published_at": "2026-10-07T19:06:35.707586+03:00"
   },
   {
     "slug": "mv15-posle-obeda",
