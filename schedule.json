@@ -3650,7 +3650,12 @@
       "листошенков"
     ],
     "yt_comment": "Бесплатный гайд «Как читать анализы»: https://listoshenkov.ru/analizy-oshibki",
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/DeR5U34gj1c/",
+      "youtube": "https://youtu.be/YyfjYgzeGug"
+    },
+    "published_at": "2026-10-09T19:05:17.049655+03:00"
   },
   {
     "slug": "mv19-magniy-eda",
