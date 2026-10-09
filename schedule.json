@@ -3629,7 +3629,12 @@
       "листошенков"
     ],
     "yt_comment": "Бесплатный гайд «Порядок еды»: https://listoshenkov.ru/poryadok",
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/DeQ0m4aAThH/",
+      "youtube": "https://youtu.be/T7Qdm3JCsh0"
+    },
+    "published_at": "2026-10-09T09:04:47.429072+03:00"
   },
   {
     "slug": "mv18-analizy-oshibki",
