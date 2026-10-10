@@ -3692,7 +3692,12 @@
       "листошенков"
     ],
     "yt_comment": "Бесплатный протокол «Железо за 8 недель»: https://listoshenkov.ru/zhelezo-eda",
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/DeUeJFTDJJp/",
+      "youtube": "https://youtu.be/prQjUaE8lk0"
+    },
+    "published_at": "2026-10-10T19:05:23.609004+03:00"
   },
   {
     "slug": "mv23-ferritin-gemoglobin",
