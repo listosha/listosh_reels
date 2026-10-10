@@ -3671,7 +3671,12 @@
       "листошенков"
     ],
     "yt_comment": "Бесплатный гайд «Магний и витамин D»: https://listoshenkov.ru/magniy-eda",
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/DeTZZ3rihMN/",
+      "youtube": "https://youtu.be/WvqpN5-ZtTw"
+    },
+    "published_at": "2026-10-10T09:04:49.336741+03:00"
   },
   {
     "slug": "mv20-zhelezo-eda",
