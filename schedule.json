@@ -3714,7 +3714,12 @@
       "листошенков"
     ],
     "yt_comment": "Бесплатный протокол «Железо за 8 недель»: https://listoshenkov.ru/ferritin-gemoglobin",
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/DeV-QEiDxj7/",
+      "youtube": "https://youtu.be/uc0YxmMGbok"
+    },
+    "published_at": "2026-10-11T09:05:12.468690+03:00"
   },
   {
     "slug": "mv24-insulinorezistentnost",
