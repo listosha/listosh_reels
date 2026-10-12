@@ -3779,7 +3779,12 @@
       "листошенков"
     ],
     "yt_comment": "Бесплатный гайд «Как читать анализы»: https://listoshenkov.ru/gormony-cikl",
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/DeZnvZED8ZI/",
+      "youtube": "https://youtu.be/DwszcfU8Mo8"
+    },
+    "published_at": "2026-10-12T19:05:28.742524+03:00"
   },
   {
     "slug": "mv27-hodba",
