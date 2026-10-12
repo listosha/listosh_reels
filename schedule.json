@@ -3758,7 +3758,12 @@
       "листошенков"
     ],
     "yt_comment": "Бесплатная методичка «Щитовидка»: https://listoshenkov.ru/ttg-norma",
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/DeYi_ONFXlA/",
+      "youtube": "https://youtu.be/AXLE6XI5uEk"
+    },
+    "published_at": "2026-10-12T09:04:45.197470+03:00"
   },
   {
     "slug": "mv26-gormony-cikl",
