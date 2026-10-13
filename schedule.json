@@ -3823,7 +3823,12 @@
       "листошенков"
     ],
     "yt_comment": "Бесплатная методичка «Щитовидка»: https://listoshenkov.ru/ttg-utrom",
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/DecMliijwe0/",
+      "youtube": "https://youtu.be/ypiTL45_rps"
+    },
+    "published_at": "2026-10-13T19:05:54.976164+03:00"
   },
   {
     "slug": "mv29-gorech-utrom",
