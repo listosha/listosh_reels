@@ -3845,7 +3845,12 @@
       "листошенков"
     ],
     "yt_comment": "Состав и схема приёма: https://listoshenkov.ru/gorech-utrom",
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/Deds6dhCvmw/",
+      "youtube": "https://youtu.be/D35dJS0U1Bo"
+    },
+    "published_at": "2026-10-14T09:07:41.385897+03:00"
   },
   {
     "slug": "mv30-sudorogi",
