@@ -3888,7 +3888,12 @@
       "листошенков"
     ],
     "yt_comment": "Бесплатный протокол «Железо за 8 недель»: https://listoshenkov.ru/semechki",
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/DegRbNnEgEY/",
+      "youtube": "https://youtu.be/MK1T8mZIPO0"
+    },
+    "published_at": "2026-10-15T09:05:01.527986+03:00"
   },
   {
     "slug": "mv32-zavtrak",
