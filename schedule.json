@@ -3953,7 +3953,12 @@
       "листошенков"
     ],
     "yt_comment": "Бесплатный протокол «Железо за 8 недель»: https://listoshenkov.ru/zhelezo-cherez-den",
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/Dej66QjkVt1/",
+      "youtube": "https://youtu.be/4wpRbtkfZzs"
+    },
+    "published_at": "2026-10-16T19:05:22.520950+03:00"
   },
   {
     "slug": "mv35-lyamblii",
