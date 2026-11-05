@@ -3607,7 +3607,12 @@
       "листошенков"
     ],
     "yt_comment": "Бесплатный гайд «Три анализа углеводного обмена»: https://listoshenkov.ru/insulin",
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/DfXawn6FEXl/",
+      "youtube": "https://youtu.be/eOdOUh2R2jA"
+    },
+    "published_at": "2026-11-05T19:04:57.298876+03:00"
   },
   {
     "slug": "mv17-poryadok",
