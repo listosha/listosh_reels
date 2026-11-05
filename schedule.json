@@ -3585,7 +3585,12 @@
       "листошенков"
     ],
     "yt_comment": "Бесплатный гайд «Три анализа углеводного обмена»: https://listoshenkov.ru/posle-obeda",
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/DfWWM-YDKBW/",
+      "youtube": "https://youtu.be/gKWWAxf9Bkc"
+    },
+    "published_at": "2026-11-05T09:05:54.957242+03:00"
   },
   {
     "slug": "mv16-insulin",
