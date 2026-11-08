@@ -3736,7 +3736,12 @@
       "листошенков"
     ],
     "yt_comment": "Бесплатный гайд «Три анализа углеводного обмена»: https://listoshenkov.ru/insulinorezistentnost",
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/DffJRDWCOmB/",
+      "youtube": "https://youtu.be/xnausb2VQoI"
+    },
+    "published_at": "2026-11-08T19:06:03.247004+03:00"
   },
   {
     "slug": "mv25-ttg-norma",
