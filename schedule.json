@@ -3801,7 +3801,12 @@
       "листошенков"
     ],
     "yt_comment": "Бесплатный гайд «Три анализа углеводного обмена»: https://listoshenkov.ru/hodba",
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/DfjOE_lidjW/",
+      "youtube": "https://youtu.be/3Qqku17WC9s"
+    },
+    "published_at": "2026-11-10T09:05:01.177035+03:00"
   },
   {
     "slug": "mv28-ttg-utrom",
