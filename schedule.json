@@ -3867,7 +3867,12 @@
       "листошенков"
     ],
     "yt_comment": "Бесплатный гайд «Магний и витамин D»: https://listoshenkov.ru/sudorogi",
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/Dfm3r2YCGY7/",
+      "youtube": "https://youtu.be/HXdzVJ85kqk"
+    },
+    "published_at": "2026-11-11T19:06:17.478843+03:00"
   },
   {
     "slug": "mv31-semechki",
