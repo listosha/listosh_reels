@@ -3909,7 +3909,12 @@
       "листошенков"
     ],
     "yt_comment": "Бесплатный гайд «Порядок еды»: https://listoshenkov.ru/zavtrak",
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/Dfpcf-LGeic/",
+      "youtube": "https://youtu.be/kYcOBeHS2AM"
+    },
+    "published_at": "2026-11-12T19:06:44.970614+03:00"
   },
   {
     "slug": "mv33-propolis-kak",
