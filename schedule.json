@@ -3931,7 +3931,12 @@
       "листошенков"
     ],
     "yt_comment": "Состав и схема приёма: https://listoshenkov.ru/propolis-kak",
-    "status": "pending"
+    "status": "published",
+    "results": {
+      "instagram": "https://www.instagram.com/reel/Dfq8aUKiSr6/",
+      "youtube": "https://youtu.be/kPU03lfP_t0"
+    },
+    "published_at": "2026-11-13T09:04:33.616680+03:00"
   },
   {
     "slug": "mv34-zhelezo-cherez-den",
